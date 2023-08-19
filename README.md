@@ -35,10 +35,4 @@ esto generara un archivo .txt con un listado de todas las paqueterias que se est
 python -m pip install --upgrade pip
 ```
 
-3. Al parecer las librerias propias de anaconda "anaconda" y "conda" pueden generar errores (cuando se migra de un proyecto de spyder a uno en VScode) por lo que puede ser recomendable borrar estas de la lista de requerimientos.
-
-4. instalar las librerias necesarias en el destino utilizando el comando:
-
-```bash
-pip install -r requirements.txt
-```
+3. Algunas librerias son propias del ambiente de spyder y generarn errores al intentar instalarlas en VScode, por lo que una solucion es un script que recorre la lista de requerimientos elemento por elemento e intenta instalar cada uno de ellos, al encontrar un error no detiene el proceso de instalacion simplemente intenta instalar la libreria siguiente, este script se ejecuta con el archivo `installer.py` directo desde la terminal.
