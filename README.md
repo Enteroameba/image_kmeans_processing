@@ -36,3 +36,9 @@ python -m pip install --upgrade pip
 ```
 
 3. Al parecer las librerias propias de anaconda "anaconda" y "conda" pueden generar errores (cuando se migra de un proyecto de spyder a uno en VScode) por lo que puede ser recomendable borrar estas de la lista de requerimientos.
+
+4. instalar las librerias necesarias en el destino utilizando el comando:
+
+```bash
+pip install -r requirements.txt
+```
